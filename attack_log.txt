@@ -1,0 +1,10 @@
+0	500	simplernn	combined	insert	5	69.69
+0	500	simplernn	combined	insert	5	69.69
+0	200	simplernn	combined	insert	5	73.83
+0	200	simplernn	combined	insert	5	73.83
+0	200	simplernn	combined	swap	5	75.98
+0	200	simplernn	combined	flip	5	71.41
+0	200	simplernn	combined	insert	30	30.94
+0	200	simplernn	combined	swap	30	41.25
+0	200	simplernn	combined	flip	30	28.05
+0	200	simplernn	combined	remove	30	59.02

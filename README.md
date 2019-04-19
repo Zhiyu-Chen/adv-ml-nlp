@@ -17,13 +17,7 @@ month={May},}
 ## Usage:
 
 ```bash
-python train.py --data [0-7] --model [modelname]  ### Train the models that can be used in further attack
-
 python train.py --data 0 --model simplernn
-
-#--data [0-7] #select which data to use 
-#--model [simplernn, bilstm, charcnn] #select the model type to train. 
-# The code will automatically choose the preprocessing of the model.
 ``` 
 
 
@@ -39,7 +33,7 @@ python attack.py --data [0-7] --model [modelname] --modelpath [modelpath] --powe
 # to generate on parts of data. By default it will generate 2560 samples.
 ```
 
-
+```bash
 python attack.py --data 0 --model simplernn --modelpath ./models/simplernn_0_bestmodel.dat --power 30 --scoring combined --transformer insert 
 
 python attack.py --data 0 --model simplernn --modelpath ./models/simplernn_0_bestmodel.dat --power 30 --scoring combined --transformer swap 
@@ -47,3 +41,4 @@ python attack.py --data 0 --model simplernn --modelpath ./models/simplernn_0_bes
 python attack.py --data 0 --model simplernn --modelpath ./models/simplernn_0_bestmodel.dat --power 30 --scoring combined --transformer flip 
 
 python attack.py --data 0 --model simplernn --modelpath ./models/simplernn_0_bestmodel.dat --power 30 --scoring combined --transformer remove 
+```
